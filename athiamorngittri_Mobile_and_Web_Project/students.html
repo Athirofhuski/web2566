@@ -100,8 +100,8 @@
         const app = Vue.createApp({
           data() {
             return {
-              title: "Project:  เช็คชื่อจากฐานข้อมูล",
-              footer: "GITHUB : athiamorngittri ",
+              title: "Web/Mobile  Application : เช็คชื่อนักศึกษา และ ถาม/ตอบ",
+              footer: "Member : 1.นายอธิราช ตะไก่แก้ว, 2.นายณัฐกิตต์ ไทยพุทรา, 3.นายรัฐมนตรี วสันต์, 4.นางสาวอมราพร ทองสุข ",
               students: [],
               editstd: {},
               editquiz: {},
@@ -220,7 +220,7 @@
             google_logout(){
               if(confirm("Are you sure?")){
                 firebase.auth().signOut();
-                location.reload();
+                window.location.href = 'project.html';
               }
             },
             getstudent(email){

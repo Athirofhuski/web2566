@@ -31,42 +31,11 @@
                       </div>
                   </template>
                 </v-card-actions>
-              
-               <!-- <v-card-text class="pa-6">
-                    <table width="100%" >
-                        <thead>
-                          <tr>
-                            <td>รหัส</td>
-                            <td>คำนำหน้า</td>
-                            <td>ชื่อ</td>
-                            <td>สกุล</td>
-                            <td>Email</td>
-                            <td>section</td>
-                            <td>edit</td>
-                            <td>deleteData</td>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr v-for="(s) in students">
-                            <td>{{s.id}}</td>
-                            <td>{{s.title}}</td>
-                            <td>{{s.fname}}</td>
-                            <td>{{s.lname}}</td>
-                            <td>{{s.email}}</td>
-                            <td>{{s.section}}</td>
-                            <td>
-                                <v-btn @click="edit(s)"><v-icon icon="mdi-account-edit"></v-icon></v-btn>
-                            </td>
-                            <td><v-btn @click="deleteData(s)"><v-icon icon="mdi-account-remove"></v-icon></v-btn></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                </v-card-text>-->
-                <v-card-actions>
-                   <!-- <v-btn @click="readData()">Read Data (get)</v-btn>
-                    <v-btn @click="autoRead()">Auto Read (onSnapshot)</v-btn>
-                    <v-btn @click="addData()">Add Data</v-btn>-->
-                </v-card-actions>
+
+                <div  class="pa-2">
+                    รหัสวิชา : SC310006 Mobile and Web Application Development
+                </div>
+
 
 
                 <v-card-actions>
@@ -106,11 +75,11 @@
         <v-card-actions>
             <template v-if="user">
             <div class="pa-2">
-                <v-avatar><img :src="user.photoURL" /></v-avatar>
+                <!-- <v-avatar><img :src="user.photoURL" /></v-avatar> -->
             </div>
             <div class="pa-2">
-                {{user.displayName}}<br />
-                {{user.email}}<br />
+                <!-- {{user.displayName}}<br />
+                {{user.email}}<br /> -->
             </div>
         </template>
         <!--
@@ -123,14 +92,14 @@
           <table width="100%">
               <thead>
                 <tr>
-                  <td>email</td>
-                  <td>name</td>
+                  <!-- <td>email</td>
+                  <td>name</td> -->
                 </tr>
               </thead>
               <tbody>
                 <tr v-for="(tt) in teachers">
-                  <td>{{tt.email}}</td>
-                  <td>{{tt.name}}</td>
+                  <!-- <td>{{tt.email}}</td>
+                  <td>{{tt.name}}</td> -->
                  <!-- ทดสอบ if <td v-if = "t.email == ''"> <v-btn @click="readDatatc">Read Data (get)</v-btn></td>-->
                 </tr>
               </tbody>
@@ -160,8 +129,8 @@
       const app = Vue.createApp({
         data() {
           return {
-            title: "Project:  Web/Mobile  Application",
-            footer: "ระบุ รหัส ชื่อ-สกุล สาขา",
+            title: "Web/Mobile  Application : เช็คชื่อนักศึกษา และ ถาม/ตอบ",
+            footer: "Member : 1.นายอธิราช ตะไก่แก้ว, 2.นายณัฐกิตต์ ไทยพุทรา, 3.นายรัฐมนตรี วสันต์, 4.นางสาวอมราพร ทองสุข ",
             students: [],
             editstd: {},
             editmode: 0,

@@ -1,3 +1,23 @@
+.image-container {
+    margin-right: 150px;
+    margin-left: 280px;
+    border-radius: 5%;
+  }
+
+  .body2 {
+    background-repeat: no-repeat;
+    background-image: url(bg1.jpg);
+  }
+
+  .theader {
+    margin: auto;
+    text-align: center;
+  }
+
+  .theader1 {
+    margin-left: 1%;
+  }
+  
 .p1{
     margin: auto;
     width: 500px;

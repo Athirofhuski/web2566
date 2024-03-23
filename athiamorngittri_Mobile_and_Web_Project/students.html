@@ -236,7 +236,10 @@
             },
             sendob(){
                 this.editmode = "แบบฟอร์ม";
-                this.editcheckin={};
+                class_date: new Date().toISOString().substr(0, 16),
+                this.editcheckin={
+                  class_date: new Date().toISOString().substr(0, 16),
+                };
             },
             saveqiz_back() {
     if (!this.editcheckin.qiz_send) {
